@@ -1,0 +1,704 @@
+/* General Styles */
+body, html {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.homepage {
+  padding: 0;
+  margin: 0;
+  background-color: black;
+}
+
+/* Hero Section */
+.hero {
+  position: relative;
+  height: 90vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align: center;
+  overflow: hidden;
+}
+
+.background-video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.black-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.hero-content {
+  position: relative;
+  z-index: 2;
+  max-width: 1000px;
+  margin: 0 auto;
+  margin-bottom: 10%;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero h1 {
+  font-size: 4rem;
+  margin-bottom: 1rem;
+  color: white;
+}
+
+.hero p {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: white;
+}
+
+.btn1, .btn2 {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-right: 1rem;
+  color: #fff;
+  background-color: #01193c;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  font-size: 1.2rem;
+}
+
+.btn2 {
+  background-color: #f60838;
+}
+
+/* Stats Section */
+.stats-section {
+  padding: 4rem 0;
+  background-color: black;
+  text-align: center;
+  font-style: oblique;
+}
+
+.stats-section .container {
+  display: flex;
+  justify-content: center;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.stat {
+  flex: 1 0 21%;
+  margin: 1rem;
+  background-color: #050505;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.stat h3 {
+  font-size: 2rem;
+  color:#f4f4f4;
+}
+
+.stat p {
+  font-size: 1.2rem;
+  color: orange;
+}
+
+/* Services Section */
+.services-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+}
+
+.services-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.services {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+}
+
+.service {
+  flex: 1 0 30%;
+  margin: 1rem;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 2rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.service i {
+  font-size: 3rem;
+  color: #f60838;
+  margin-bottom: 1rem;
+}
+
+.service h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.services-section h2{
+  color:black;
+}
+
+.service p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Dance Styles Section */
+.dance-styles-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+}
+
+.dance-styles-section .container h2 {
+  color: black;
+  padding-bottom: 2%;
+}
+
+.dance-styles-carousel {
+  overflow: hidden;
+  white-space: nowrap;
+  
+}
+
+.dance-styles {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.dance-style {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.dance-style-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding-bottom: 1rem;
+}
+
+.dance-style img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.dance-style h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.dance-style p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem;
+}
+
+.dance-description {
+  margin: 1rem;
+  transition: all 0.5s ease-in-out;
+}
+
+.learn-more {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  margin-top: 0.5rem;
+  margin-bottom: 1rem;
+  color: #fff;
+  background-color: #01193c;
+  text-decoration: none;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+/* Gallery Section */
+.gallery-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.gallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.gallery-item {
+  flex: 1 0 30%;
+  box-sizing: border-box;
+  padding: 0 15px;
+  margin-bottom: 30px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+}
+
+/* Responsive Sections */
+.classes-section, .events-section, .about-section {
+  padding: 4rem 0;
+  background-color: #fff;
+  text-align: center;
+}
+
+.classes-section p, .events-section p, .about-section p {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 1rem;
+}
+
+/* Testimonial Section */
+.testimonial-section h2 {
+  color: orange;
+  text-align: center;
+  font-size: 2em; /* Larger font size for headings */
+}
+
+.testimonial-section {
+  padding: 3% 5%; /* Added horizontal padding for smaller screens */
+  text-align: justify;
+  color: orange;
+  background-color: black;
+  font-variant-caps: all-small-caps;
+}
+
+.testimonial-section p {
+  color: #f4f4f4;
+  font-size: 1em; /* Font size for paragraph text */
+}
+
+.testimonial-carousel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: auto;
+  min-height: 150px; /* Adjust minimum height for different screen sizes */
+  overflow: hidden;
+  position: relative;
+}
+
+.testimonial-box {
+  position: absolute;
+  transition: opacity 1s ease-in-out, transform 1s ease-in-out;
+  text-align: center;
+  padding: 0 10px;
+  width: 100%;
+}
+
+.testimonial-box.active {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.testimonial-box:not(.active) {
+  opacity: 0;
+  transform: translateY(-100px); /* Added transform effect for better transitions */
+}
+/* Common Nav Button Styles */
+/* General Carousel Container */
+.dance-styles-carousel, .team-members-carousel {
+  position: relative;
+  overflow: hidden;
+  padding: 0 40px; /* Ensure there's some padding around the carousel */
+}
+
+/* Navigation Button Styles */
+.nav-button {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  position: absolute;
+  top: 50%; /* Align button vertically in the middle of the section */
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+
+
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button i {
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+.nav-buttons{
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  cursor: pointer;
+  
+  position: absolute;
+  top: 50%; /* Align button vertically in the middle of the section */
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  z-index: 100;
+}
+.nav-buttons:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-buttons i {
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+.nav-buttons-left {
+  left: 1rem;
+}
+
+.nav-buttons-right {
+  right: 1rem;
+}
+/* Ensure the section height is large enough so buttons don't overlap */
+.dance-styles-carousel, .team-members-carousel {
+  min-height: 200px; /* Adjust based on your design */
+}
+
+.nav-button-left {
+  left: 1rem;
+}
+
+.nav-button-right {
+  right: 1rem;
+}
+
+.nav-button:hover {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.nav-button i {
+  font-size: 1.2rem;
+  pointer-events: none;
+}
+
+/* Media queries for responsiveness */
+@media (max-width: 768px) {
+  .testimonial-section h2 {
+    font-size: 1.5em; /* Adjusted font size for smaller screens */
+  }
+  
+  .testimonial-section {
+    padding: 5% 3%; /* Reduced padding on smaller screens */
+  }
+
+  .testimonial-carousel {
+    height: auto; /* Auto height for mobile devices */
+  }
+
+  .testimonial-box {
+    padding: 0 15px;
+    font-size: 0.9em; /* Adjust text size on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonial-section h2 {
+    font-size: 1.2em; /* Smaller heading for extra small screens */
+  }
+
+  .testimonial-section {
+    padding: 5% 2%; /* Narrower padding for extra small screens */
+  }
+
+  .testimonial-box {
+    padding: 0 10px;
+    font-size: 0.8em; /* Further reduce font size */
+  }
+}
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+}
+
+.team-section h2 {
+  color: black;
+  padding-bottom: 2%;
+}
+
+.team-carousel {
+ 
+  white-space: nowrap;
+  min-height: 300px;
+overflow: hidden;
+  position: relative;
+}
+
+.team-members {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.team-member {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.team-member-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 0rem;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+}
+
+.team-member-card h3 i {
+  color: red;
+  font-size: 1.5rem;
+  margin-top: 0.5rem;
+  display: inline-block;
+  transition: color 0.3s;
+}
+
+.team-member-card h3 i:hover {
+  background: #f60838;
+  color: #fff;
+  transition: 0.6s;
+  cursor: pointer;
+}
+
+
+
+/* Media Queries for Responsive Design */
+@media (max-width: 1024px) {
+  .hero h1 {
+    font-size: 3.5rem;
+  }
+
+  .hero p {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 3rem;
+  }
+
+  .hero p {
+    font-size: 1.2rem;
+  }
+
+  .dance-style, .team-member, .stat, .service {
+    flex: 1 0 45%;
+  }
+
+  .team-member img {
+    height: 350px;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero h1 {
+    font-size: 2.5rem;
+  }
+
+  .hero p {
+    font-size: 1rem;
+  }
+
+  .btn1, .btn2 {
+    font-size: 1rem;
+    padding: 0.8rem 1.5rem;
+  }
+
+  .dance-style, .team-member, .stat, .service {
+    flex: 0 0 100%;
+  }
+
+  .team-member img {
+    height: 400px;
+  }
+}
+
+
+
+
+
+/* Team Section */
+.team-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+.team-carousel {
+  white-space: nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+}
+
+.team-members {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.team-member {
+  flex: 1 0 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.team-member-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.team-member img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+.team-member h3 {
+  font-size: 1.5rem;
+  margin: 0.5rem 0;
+}
+
+.team-member p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .team-member {
+    flex: 1 0 50%; /* Display two images in mobile view */
+  }
+}
+
+@media (max-width: 480px) {
+  .team-member {
+    flex: 1 0 100%;
+  }
+}
+
+
+/* Dance Styles Section */
+.dance-styles-section {
+  padding: 4rem 0;
+  background-color: #f4f4f4;
+  text-align: center;
+  font-variant-caps: all-small-caps;
+}
+
+.dance-styles-carousel {
+  white-space: nowrap;
+  overflow-x: auto; /* Allow manual scrolling */
+ 
+  scroll-behavior: smooth;/* Smooth scrolling on mobile */
+}
+
+.dance-styles {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+  scroll-snap-align: center;
+}
+
+.dance-style {
+  flex: 0 0 25%;
+  box-sizing: border-box;
+  padding: 0 15px;
+}
+
+.dance-style-card {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.dance-style img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 1px solid #ddd;
+}
+
+.dance-style h3 {
+  font-size: 1.5rem;
+  margin: 1rem 0 0.5rem;
+}
+
+.dance-style p {
+  font-size: 1rem;
+  color: #666;
+  margin: 0.5rem;
+}

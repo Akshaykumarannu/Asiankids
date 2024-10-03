@@ -1,0 +1,14 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap');
+  body {
+    font-family: 'Roboto';
+  }
+   #faq {
+    padding: 2em;
+    margin: 1em 0;
+  }
