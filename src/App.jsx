@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { HashRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import '@fortawesome/fontawesome-free/css/all.min.css';
 
@@ -18,10 +18,10 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/about-us" element={<AboutUs />} />
-        <Route path="/classes" element={<Classes />} /> 
-        <Route path="/gallery" element={<Gallery/>} />{/* Add the route for Classes */}
-        <Route path="/events" element={<Events/>} />
-        <Route path="/contactus" element={<ContactUs/>} />
+        <Route path="/classes" element={<Classes />} />
+        <Route path="/gallery" element={<Gallery />} />
+        <Route path="/events" element={<Events />} />
+        <Route path="/contactus" element={<ContactUs />} />
       </Routes>
       <Footer />
     </Router>

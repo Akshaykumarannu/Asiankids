@@ -222,10 +222,10 @@ const Homepage = () => {
         <div className="hero-content">
           <h1>ASIAN KIDS DANCE CREW</h1>
           <p>YOUR JOURNEY BEGINS HERE..!</p>
-          <a href="/classes" className="btn1">
+          <a href="#/classes" className="btn1">
             Explore Classes
           </a>
-          <a href="/contactus" className="btn2">
+          <a href="#/contactus" className="btn2">
             Join Us
           </a>
         </div>
@@ -252,7 +252,7 @@ const Homepage = () => {
                     <img src={style.imgSrc} alt={style.title} />
                     <h3>{style.title}</h3>
                     <button
-                      onClick={() => (window.location.href = "/contactus")}
+                      onClick={() => (window.location.href = "#/contactus")}
                       className="learn-more"
                     >
                       Enroll Now
