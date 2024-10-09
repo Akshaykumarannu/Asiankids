@@ -646,7 +646,7 @@ overflow: hidden;
 
 @media (max-width: 480px) {
   .team-member {
-    flex: 1 0 100%;
+    flex: 1 0 75%;
   }
 }
 
