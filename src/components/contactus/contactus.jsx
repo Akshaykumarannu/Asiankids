@@ -10,7 +10,27 @@ const ContactUs = () => {
     contact: '',
     comments: '',
   });
+  const handleEnrollClick = () => {
+    // Replace with the desired WhatsApp number and message
+    const phoneNumber = "919526735765"; // Country code + phone number
+    const message = encodeURIComponent("Hello! I would like to enroll in your dance class.");
+    const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
+    // Redirect to WhatsApp chat
+    window.open(whatsappUrl, "_blank");
+  };
+
+  const handleInstaClick = () => {
+    // Replace with the desired Instagram username
+    const instagramUsername = 'asiankids_dancecrew_official';  // Instagram username
+    
+    // Construct the Instagram profile URL
+    const instagramUrl = `https://www.instagram.com/${instagramUsername}/`;
+
+    // Open the Instagram profile in a new tab
+    window.open(instagramUrl, '_blank');
+  };
+  const phoneNumber = '+919740791523';
   const handleChange = (e) => {
     const { name, value } = e.target;
     setFormData((prevData) => ({
@@ -40,6 +60,7 @@ const ContactUs = () => {
   };
 
   return (
+
     <div className="contact-us">
       <div className="contactus-banner">
         <img src="contactbackground.jpg" alt="Asian Kids Dance Crew Banner" className="banner-image-class" />
@@ -49,9 +70,19 @@ const ContactUs = () => {
       </div>
       <div className='spaceforcontainer'>
         <div className="contact-form-container">
+          <h2>Direct Link</h2>
+        <img src="whatsapp.png" alt="Contact Us" className="contact-us-image" onClick={handleEnrollClick}/>
+        <a href={`tel:${phoneNumber}`}>
+      <img src="call.png" alt="Call Us" className='contact-us-image' />
+    </a>
+               <img src="insta.png" alt="Contact Us" className="contact-us-image" onClick={handleInstaClick}/>
+               <h2>OR</h2>
           <h2>Get In Touch with us</h2>
+         
           <form className="contact-form" onSubmit={handleSubmit}>
             <div className="form-group">
+               
+               
               <label htmlFor="firstName">First Name</label>
               <input type="text" id="firstName" name="firstName" value={formData.firstName} onChange={handleChange} />
             </div>
