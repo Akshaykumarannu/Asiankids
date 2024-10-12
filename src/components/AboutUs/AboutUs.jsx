@@ -39,11 +39,90 @@ const instructors = [
   
   // Add more sample data as needed
 ];
+
+const teamMembers = [
+  {
+    imgSrc: "shyamdas.png",
+    name: "Shyamdas Vaidyar",
+    role: "Founder / Choreographer / Director",
+    instagram: "https://www.instagram.com/shyamdasvaidyar/"
+  },
+  {
+    imgSrc: "manu.png",
+    name: "Manu",
+    role: "Choreographer / Instructor",
+    instagram:'https://www.instagram.com/man_u_un_locked_man/'
+  },
+  {
+    imgSrc: "pradeep2.png",
+    name: "Pradeep Koppal",
+    role: "Manager / Dancer",
+     instagram: "https://www.instagram.com/_pradeep_koppal/"
+  },
+  {
+    imgSrc: "karthietta.png",
+    name: "Karthik KR",
+    role: "Choreographer / Instructor"
+    , instagram: "https://www.instagram.com/karthikmayavi/"
+  },
+  {
+    imgSrc: "akshay2.png",
+    name: "Akshay Kumar",
+    role: "Dancer / Instructor",
+     instagram: "https://www.instagram.com/annu_akshay/"
+  },
+  {
+  imgSrc: "athira.png",
+    name: "Athira lakshmanan",
+    role: "Classical Dancer / Instructor",
+     instagram: "https://www.instagram.com/athiralakshmananhoney/"
+  },
+  {
+    imgSrc: "renjith.png",
+    name: "Rengith",
+    role: "Dancer / Instructor",
+     instagram: "https://www.instagram.com/mr_capture_head/"
+  },
+  {
+    imgSrc: "vinod.png",
+    name: "Vinod Thekzz",
+    role: "Choreographer / Instructor",
+     instagram: "https://www.instagram.com/vinuthekzz/"
+  },
+  // {
+  //   imgSrc: "mithun.png",
+  //   name: "Mithun",
+  //   role: "Dancer",
+  //    instagram: "https://www.instagram.com/me_thu_n46/"
+  // },
+  {
+    imgSrc: "Screenshot_20240806-181958.png",
+    name: "Midhuna",
+    role: "Dancer / Instructor",
+    instagram:'https://www.instagram.com/_k_a_t_h_u_zzz_/'
+  }
+];
 const AboutUs = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [currentTeamIndex, setCurrentTeamIndex] = useState(0);
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % instructors.length);
+  };
+  const handleDancePrev = () => {
+    setCurrentDanceIndex((prevIndex) => (prevIndex - 1 + danceStyles.length) % danceStyles.length);
+  };
+
+  const handleDanceNext = () => {
+    setCurrentDanceIndex((prevIndex) => (prevIndex + 1) % danceStyles.length);
+  };
+
+  const handleTeamPrev = () => {
+    setCurrentTeamIndex((prevIndex) => (prevIndex - 1 + teamMembers.length) % teamMembers.length);
+  };
+
+  const handleTeamNext = () => {
+    setCurrentTeamIndex((prevIndex) => (prevIndex + 1) % teamMembers.length);
   };
 
   const handlePrev = () => {
@@ -133,38 +212,45 @@ const AboutUs = () => {
         </div>
         <img src="IMG-20240717-WA0009.jpg" alt="Our History" className="section-image" />
       </section>
-
-      <section className="teams-section">
-        <h2>Our Team</h2>
-        <div className="instructors-carousel">
-          <button className="carousel-button prev" onClick={handlePrev}>❮</button>
-          <div className="instructors">
-            {instructors
-              .slice(currentIndex, currentIndex + 5)
-              .concat(instructors.slice(0, Math.max(0, currentIndex + 5 - instructors.length))) // For wrapping
-              .map((instructor, index) => (
-                <div className="instructor" key={index}>
-                  <img
-                    src={instructor.imgSrc}
-                    alt={`Instructor ${instructor.name}`}
-                    className="instructor-image"
-                  />
-                  <div className="instructor-info">
-                    <p>{instructor.name}</p>
-                    {/* <a
-                      href={`https://instagram.com/${instructor.instaUsername}`}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      Instagram
-                    </a> */}
+      {/* Team section */}
+      <section className="team-section">
+        <h2>Our Instructors</h2>
+        <div className="container">
+          {/* Navigation buttons for the Team Members section */}
+          {/* <button className="nav-buttons nav-buttons-left" onClick={handleTeamPrev}>
+            <i className="fa fa-chevron-left"></i> */}
+          {/* </button> */}
+          <div className="team-carousel">
+            <div
+              className="team-members"
+              style={{
+                transform: `translateX(-${currentTeamIndex * 100}%)`,
+                transition: "transform 0.5s ease-in-out"
+              }}
+            >
+              {teamMembers.map((member, index) => (
+                <div className="team-member" key={index}>
+                  <div className="team-member-card">
+                    <img src={member.imgSrc} alt={member.name} />
+                    <h3>
+                      {member.name}
+                      <a href={member.instagram} target="_blank" rel="noopener noreferrer">
+                        <i className="fa-brands fa-instagram"></i>
+                      </a>
+                    </h3>
+                    <p>{member.role}</p>
                   </div>
                 </div>
               ))}
+            </div>
           </div>
-          <button className="carousel-button next" onClick={handleNext}>❯</button>
+          {/* <button className="nav-buttons nav-buttons-right" onClick={handleTeamNext}>
+            <i className="fa fa-chevron-right"></i>
+          </button> */}
         </div>
       </section>
+
+     
     </div>
   );
 };

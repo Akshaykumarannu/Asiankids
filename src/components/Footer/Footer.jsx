@@ -10,14 +10,16 @@ const Footer = () => {
             <div className="col-md-6 col-lg-4 col-12 ft-1">
               <h3><span>ASIAN </span>KIDS</h3>
               <p>Uduma - Romana Center, Uduma, Kasaragod </p>
-              <p>Kanhangad - Opposite of Taluk Office, Roof Top ,Puthiyakota Kanhangad</p>
+              {/* <p>Kanhangad - Opposite of Taluk Office, Roof Top ,Puthiyakota Kanhangad</p> */}
               <div className="footer-icons">
-                <i className="fa-brands fa-facebook"></i>
-                <i className="fa-brands fa-twitter"></i>
+              <a href="https://www.facebook.com/profile.php?id=100063835325194&mibextid=JRoKGi"> <i className="fa-brands fa-facebook"></i></a>
+                {/* <i className="fa-brands fa-twitter"></i> */}
                 
-                <i className="fa-brands fa-linkedin-in"></i>
+                {/* <i className="fa-brands fa-linkedin-in"></i> */}
                 <a href="https://www.instagram.com/asiankids_dancecrew_official/"><i className="fa-brands fa-instagram"></i></a>
-              </div>
+                <a href="https://www.facebook.com/profile.php?id=100063835325194&mibextid=JRoKGi"> <i className="fa-brands fa-facebook"></i></a>
+                <a href="https://www.instagram.com/asiankids_dancecrew_official/"><i className="fa-brands fa-instagram"></i></a>
+                </div>
             </div>
             <div className="col-md-6 col-lg-3 col-12 ft-2">
               <h5>Quick Links</h5>
@@ -44,6 +46,7 @@ const Footer = () => {
       <div className='Last-footer'>
         <p>&copy; asiankids_dancecrew_official
         &nbsp;<a href="https://www.instagram.com/asiankids_dancecrew_official/"><i className="fa-brands fa-instagram"></i></a>
+        
         <br></br>All Rights Reserved. 
         &nbsp;Made with 🤍 by Akshay Kumar</p>
       </div>

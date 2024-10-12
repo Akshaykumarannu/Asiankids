@@ -28,7 +28,7 @@ const Classes = () => {
               
               <p>Timings: 9.00am to 4.00pm &nbsp;&nbsp;&nbsp;All day classes available(kids & Seniors)</p>
               
-              <a href="/contactus" className="joinus-button">Join Us</a> 
+              <a href="/#contactus" className="joinus-button">Join Us</a> 
             </div>
           </div>
           
@@ -43,7 +43,7 @@ const Classes = () => {
               <p>Located in the heart of Kanhangad, this studio is known for its professional instructors and state-of-the-art facilities.</p>
               <p>Timings: 9.00am to 4.00pm &nbsp;&nbsp;&nbsp; Only on Sunday's (kids & Seniors)</p>
               
-              <a href="/contactus" className="joinus-button">Join Us</a> 
+              <a href="/#contactus" className="joinus-button">Join Us</a> 
             </div>
           </div>
 
@@ -52,7 +52,7 @@ const Classes = () => {
             <div className="studio-info">
               <h2><i className="fas fa-map-marker-alt location-icon"></i> Dubai</h2>
               <p>Our Dubai studio offers a luxurious environment with top-notch amenities, making it a premier destination for dance enthusiasts.</p>
-              <a href="/contactus" className="joinus-button">Join Us</a> 
+              <a href="/#contactus" className="joinus-button">Join Us</a> 
             </div>
           </div>
         </div>
