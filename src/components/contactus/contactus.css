@@ -127,6 +127,7 @@ body {
     .contact-info .info-section {
       max-width: 100%;
     }
+    
   }
   .contactus-banner {
     position: relative;
@@ -157,9 +158,56 @@ body {
     font-size: 70px;
   }
   
-  .contact-us-image{
-    
-    padding-left: 6rem;
-    margin-bottom: 1rem;
+  .contact-us-image img {
+    max-width: 100%;
+    height: auto;
+    margin: 10px;
+    max-height: 100px;
+     /* Adjust the logo size */
+  }
+ .contact-us-image{
+  padding-left: 6rem;
+  margin-bottom: 1rem;
+ }
+  @media screen and (max-width: 768px) {
+    .contact-us-image {
+      padding-left: 3rem; /* Less padding for tablets */
+    }
+  
+    .contact-us-image img {
+      max-height: 80px; /* Adjust the logo size for medium devices */
+    }
   }
   
+  @media screen and (max-width: 425px) {
+    .contact-us-image {
+      padding-left: 1.5rem; /* Less padding for small devices */
+    }
+  
+    .contact-us-image img {
+      max-height: 60px; /* Adjust the logo size for small devices */
+    }
+  }
+  
+  @media screen and (max-width: 375px) {
+    .contact-us-image {
+      padding-left: 1rem; /* Less padding for very small devices */
+    }
+  
+    .contact-us-image img {
+      max-height: 50px; /* Adjust the logo size for very small devices */
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .contact-us-image {
+      flex-direction: column; /* Stack images vertically on very small devices */
+      align-items: center; /* Center align for vertical stacking */
+      padding-left: 0; /* Remove left padding */
+    }
+  
+    .contact-us-image img {
+      max-height: 40px; /* Further reduce logo size for extra small devices */
+      margin: 5px; /* Adjust margin for better spacing */
+    }
+  }
