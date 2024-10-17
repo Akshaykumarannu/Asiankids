@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link,useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/aklogo1.jpg";
-import toggle_black from "/icons8-list-100.png";
+import toggle_black from "/menuicon.png";
 
 const Navbar = () => {
   const [isActive, setIsActive] = useState(false);
