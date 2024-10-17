@@ -181,3 +181,51 @@
     width: 100%;
   }
 }
+
+@media screen and (max-width: 320px) {
+
+  .nav {
+    flex-direction: column;
+    padding: 5px;
+  }
+
+  .toggle-menu {
+ 
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+  }
+
+  .nav-menu {
+    display: none;
+    flex-direction: column;
+    width: 100%;
+    background: black;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    padding: 10px 0;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-menu.active {
+    display: flex;
+  }
+
+  .nav-menu li {
+    margin: 10px 0;
+  }
+
+  .logo {
+    width: 10%;
+    margin-right: auto;
+  }.night{
+    height: 50%;
+    width: 50%;
+  }
+.logo-container {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+}

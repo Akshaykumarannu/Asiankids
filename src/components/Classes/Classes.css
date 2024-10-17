@@ -203,3 +203,45 @@
     font-size: 0.9rem;
   }
 }
+/* Media Queries for Responsive Design */
+@media (max-width: 768px) {
+  .clas-banner {
+    height: 40vh; /* Reduce banner height for tablets */
+  }
+
+  .banner-text-class h1 {
+    font-size: 50px; /* Adjust header size for tablets */
+  }
+
+  .banner-text-class p {
+    font-size: 16px; /* Adjust subtext size for tablets */
+  }
+}
+
+@media (max-width: 480px) {
+  .clas-banner {
+    height: 30vh; /* Further reduce height for smaller mobile screens */
+  }
+
+  .banner-text-class h1 {
+    font-size: 35px; /* Smaller header for mobile screens */
+  }
+
+  .banner-text-class p {
+    font-size: 14px; /* Smaller subtext for mobile screens */
+  }
+}
+
+@media (max-width: 320px) {
+  .clas-banner {
+    height: 25vh; /* Minimal height for very small screens */
+  }
+
+  .banner-text-class h1 {
+    font-size: 28px; /* Very small header size */
+  }
+
+  .banner-text-class p {
+    font-size: 12px; /* Very small subtext */
+  }
+}

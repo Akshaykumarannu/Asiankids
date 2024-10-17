@@ -536,7 +536,7 @@ const Homepage = () => {
       <section className="teams-section">
         <h2>Our Team</h2>
         <div className="instructors-carousel">
-          <button className="carousel-button prev" onClick={handlePrev}>
+          <button className="carousel-buttonprev" onClick={handlePrev}>
             ❮
           </button>
           <div className="instructors">
@@ -568,7 +568,7 @@ const Homepage = () => {
                 </div>
               ))}
           </div>
-          <button className="carousel-button next" onClick={handleNext}>
+          <button className="carousel-buttonnext" onClick={handleNext}>
             ❯
           </button>
         </div>

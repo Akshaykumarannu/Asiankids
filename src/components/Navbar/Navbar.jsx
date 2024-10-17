@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Link,useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import "./Navbar.css";
 import logo from "../../assets/aklogo1.jpg";
 import toggle_black from "/menuicon.png";
@@ -11,8 +11,14 @@ const Navbar = () => {
   const toggleMenu = () => {
     setIsActive(!isActive);
   };
+
   const handleContactUsClick = () => {
+    setIsActive(false); // Close the menu after navigating
     navigate('/contactus');
+  };
+
+  const closeMenu = () => {
+    if (isActive) setIsActive(false); // Close the menu after clicking an item
   };
 
   return (
@@ -25,19 +31,19 @@ const Navbar = () => {
       </div>
       <ul className={isActive ? "nav-menu active" : "nav-menu"}>
         <li>
-          <Link to="/">Home</Link>
+          <Link to="/" onClick={closeMenu}>Home</Link>
         </li>
         <li>
-          <Link to="/about-us">About Us</Link>
+          <Link to="/about-us" onClick={closeMenu}>About Us</Link>
         </li>
         <li>
-          <Link to="/classes">Classes</Link>
+          <Link to="/classes" onClick={closeMenu}>Classes</Link>
         </li>
         <li>
-          <Link to="/events">Events</Link>
+          <Link to="/events" onClick={closeMenu}>Events</Link>
         </li>
         <li>
-          <Link to="/gallery">Gallery</Link>
+          <Link to="/gallery" onClick={closeMenu}>Gallery</Link>
         </li>
         <li>
           <button className="btn" onClick={handleContactUsClick}>Contact Us</button>
