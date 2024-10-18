@@ -38,7 +38,7 @@ const Footer = () => {
               <h5>Contact Us</h5>
               <p><i className="fa-solid fa-phone-volume"></i> +91 79073 93309</p>
               <p><i className="fa-solid fa-envelope"></i> asiankidsdancecrew@gmail.com</p>
-              <p><i className="fa-solid fa-paper-plane"></i> Uduma, Kanhangad.</p>
+              <p><i className="fas fa-map-marker-alt"></i> Uduma & Kanhangad.</p>
             </div>
           </div>
         </div>

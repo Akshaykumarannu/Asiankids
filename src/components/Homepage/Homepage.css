@@ -55,7 +55,7 @@ body, html {
 .hero h1 {
   font-size: 4rem;
   margin-bottom: 1rem;
-  color: white;
+  color: whitesmoke;
 }
 
 .hero p {
@@ -68,8 +68,8 @@ body, html {
   display: inline-block;
   padding: 1rem 2rem;
   margin-right: 1rem;
-  color: #fff;
-  background-color: #01193c;
+  color: whitesmoke;
+  background-color: black;
   text-decoration: none;
   border: none;
   border-radius: 25px;
@@ -77,7 +77,8 @@ body, html {
 }
 
 .btn2 {
-  background-color: #f60838;
+  background-color: whitesmoke;
+  color: black;
 }
 
 /* Stats Section */
@@ -535,6 +536,8 @@ overflow: hidden;
   margin-bottom: 4%;
   text-decoration: underline;
   text-underline-offset: 8px;
+ 
+  padding-bottom: 2%;
 }
 .team-members {
   display: flex;

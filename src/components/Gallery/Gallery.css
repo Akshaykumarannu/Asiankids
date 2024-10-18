@@ -99,10 +99,12 @@ body {
   padding: 10px;
   cursor: pointer;
   z-index: 1;
+  font-size: 1rem;
 }
 
 .left-arrow {
   left: 10px;
+
 }
 
 .right-arrow {
@@ -163,3 +165,4 @@ body {
     max-width: 100%; /* Show 1 video per row on the smallest screens */
   }
 }
+

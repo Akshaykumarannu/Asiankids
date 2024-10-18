@@ -387,21 +387,26 @@ const stats = [
   { value: "+100", label: "Awards won" },
 ];
 
+
 const Homepage = () => {
   const [currentDanceIndex, setCurrentDanceIndex] = useState(0);
 
   const [currentTestimonial, setCurrentTestimonial] = useState(0);
   const [currentIndex, setCurrentIndex] = useState(0);
 
-  const handleEnrollClick = () => {
+  
+  const handleEnrollingClick = () => {
     // Replace with the desired WhatsApp number and message
     const phoneNumber = "919526735765"; // Country code + phone number
-    const message = encodeURIComponent("Hello! I would like to enroll in your dance class.");
+    const message = encodeURIComponent(
+      "Hello! I would like to enroll in your dance class."
+    );
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${message}`;
 
     // Redirect to WhatsApp chat
     window.open(whatsappUrl, "_blank");
   };
+  const phoneNumber = "+919526735765";
 
   const handleNext = () => {
     setCurrentIndex((prevIndex) => (prevIndex + 1) % instructors.length);
@@ -423,6 +428,7 @@ const Homepage = () => {
   }, [testimonials.length]);
 
   return (
+    
     <div className="homepage">
       {/* Hero section */}
       <header className="hero">
@@ -434,8 +440,8 @@ const Homepage = () => {
         <div className="hero-content">
           <h1>ASIAN KIDS DANCE CREW</h1>
           <p>YOUR JOURNEY BEGINS HERE..!</p>
-          <a href="#/classes" className="btn1">
-            Explore Classes
+          <a href={`tel:${phoneNumber}`}>
+            <button className="btn1">Call Us</button>
           </a>
           <a href="#/contactus" className="btn2">
             Join Us
