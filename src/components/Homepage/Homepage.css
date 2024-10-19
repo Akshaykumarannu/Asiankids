@@ -779,8 +779,8 @@ width: 200px;;
 /* Floating WhatsApp button styling */
 .floating-whatsapp-button {
   position: fixed;
-  bottom: 20px;
-  right: 20px;
+  bottom: 40px;
+  right: 30px;
   background-color: white;
   border-radius: 50px;
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
@@ -810,8 +810,8 @@ width: 200px;;
 
 @media (max-width: 768px) {
   .floating-whatsapp-button {
-    bottom: 15px;
-    right: 15px;
+    bottom: 20px;
+    right: 20px;
     padding: 8px 12px;
   }
 
@@ -827,8 +827,8 @@ width: 200px;;
 
 @media (max-width: 425px) {
   .floating-whatsapp-button {
-    bottom: 10px;
-    right: 10px;
+    bottom: 18px;
+    right: 18px;
     padding: 6px 10px;
   }
 
