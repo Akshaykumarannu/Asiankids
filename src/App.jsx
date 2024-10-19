@@ -10,10 +10,11 @@ import Classes from './components/Classes/Classes'; // Import the Classes compon
 import Gallery from './components/Gallery/Gallery';
 import Events from './components/Events/Events';
 import ContactUs from './components/contactus/contactus';
-
+import ScrollToTop from './components/ScrollToTop';
 function App() {
   return (
     <Router>
+      <ScrollToTop />
       <Navbar />
       <Routes>
         <Route path="/" element={<HomePage />} />
