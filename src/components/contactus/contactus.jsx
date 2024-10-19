@@ -174,6 +174,7 @@ const ContactUs = () => {
             <h3>Email Address</h3>
             <p>asiankidsdancecrew@gmail.com</p>
           </div>
+          
         </div>
       </div>
     </div>

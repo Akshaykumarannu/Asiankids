@@ -577,7 +577,12 @@ const Homepage = () => {
             ❯
           </button>
         </div>
+        <div className="floating-whatsapp-button" onClick={handleEnrollingClick}>
+      <img src="whatsapp.png" alt="WhatsApp" />
+      <span>Chat With Us</span>
+    </div>
       </section>
+      
     </div>
   );
 };
