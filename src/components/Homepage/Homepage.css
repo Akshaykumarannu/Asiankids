@@ -79,6 +79,13 @@ body, html {
 .btn2 {
   background-color: whitesmoke;
   color: black;
+  
+}
+.btn2:hover{
+  background-color: red;
+}
+.btn1:hover{
+  background-color: red;
 }
 
 /* Stats Section */

@@ -443,9 +443,8 @@ const Homepage = () => {
           <a href={`tel:${phoneNumber}`}>
             <button className="btn1">Call Us</button>
           </a>
-          <a href="#/contactus" className="btn2">
-            Join Us
-          </a>
+          <a><button className="btn2" onClick={handleEnrollingClick}>Join Us</button></a>
+          
         </div>
       </header>
 
@@ -472,7 +471,7 @@ const Homepage = () => {
                     <img src={style.imgSrc} alt={style.title} />
                     <h3>{style.title}</h3>
                     <button
-                      onClick={() => handleEnrollClick()}
+                      onClick={() => handleEnrollingClick()}
                       className="learn-more"
                     >
                       Enroll Now
