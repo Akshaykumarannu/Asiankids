@@ -27,7 +27,7 @@ const Events = () => {
         </video>
         <div className="overlay">
           <h1>Book us for Live Events</h1>
-          <button className="cta-button" onClick={openModal}>Book Us Now</button>
+          <button className="cta-button" onClick={openModal}>Book Now</button>
         </div>
       </div>
 
