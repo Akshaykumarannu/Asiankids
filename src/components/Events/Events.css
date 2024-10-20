@@ -159,11 +159,12 @@ body {
     flex-direction: column;
     align-items: center;
     padding: 20px 10px;
+    margin-bottom: 0;
   }
 
   .visual-section img {
-    width: 90%; /* Smaller images for mobile devices */
-    height: 400px;
-    margin-bottom: 10px; /* Spacing between images */
+    margin-bottom: 10px; /* Smaller images for mobile devices */
+    height: auto;
+   max-height: 300px; /* Spacing between images */
   }
 }
