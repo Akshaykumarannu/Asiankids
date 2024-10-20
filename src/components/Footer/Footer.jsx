@@ -24,12 +24,12 @@ const Footer = () => {
             <div className="col-md-6 col-lg-3 col-12 ft-2">
               <h5>Quick Links</h5>
               <ul>
-                <li><a href="/">Home</a></li>
-                <li><a href="/about-us">About Us</a></li>
-                <li><a href="/classes">Classes</a></li>
-                <li><a href="/events">Events</a></li>
-                <li><a href="/gallery">Gallery</a></li>
-                <li><a href="/contactus[
+                <li><a href="/#">Home</a></li>
+                <li><a href="/#about-us">About Us</a></li>
+                <li><a href="/#classes">Classes</a></li>
+                <li><a href="/#events">Events</a></li>
+                <li><a href="/#gallery">Gallery</a></li>
+                <li><a href="/#contactus
                 ">Contact Us</a></li>
                 
               </ul>
