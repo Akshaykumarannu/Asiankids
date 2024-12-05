@@ -219,6 +219,7 @@ body, html {
   
 }
 
+
 .dance-style img {
   width: 100%;
   height: 200px;
@@ -251,6 +252,7 @@ body, html {
   background-color: #01193c;
   text-decoration: none;
   border: none;
+  
   border-radius: 25px;
   cursor: pointer;
 }
@@ -455,6 +457,13 @@ body, html {
     font-size: 0.9em; /* Adjust text size on smaller screens */
   }
 }
+.dance-style-card img h3{
+  text-align: center;
+  padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 
 @media (max-width: 480px) {
   .testimonial-section h2 {
@@ -470,7 +479,13 @@ body, html {
     font-size: 0.8em; /* Further reduce font size */
   }
 }
-
+.dance-style-card img h3{
+  text-align: center;
+  padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
 /* Team Section */
 .team-section {
   padding: 4rem 0;
@@ -723,6 +738,7 @@ width: 200px;;
   background-color: #f4f4f4;
   text-align: center;
   font-variant-caps: all-small-caps;
+  
 }
 
 .dance-styles-carousel {
@@ -736,10 +752,11 @@ width: 200px;;
   display: flex;
   transition: transform 0.5s ease-in-out;
   scroll-snap-align: center;
+  
 }
 
 .dance-style {
-  flex: 0 0 25%;
+  
   box-sizing: border-box;
   padding: 0 15px;
 }
