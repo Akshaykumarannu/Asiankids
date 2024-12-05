@@ -1,21 +1,21 @@
 import React, { useState, useRef, useEffect } from "react";
 import "./Gallery.css";
-import visual1 from '/IMG-20240717-WA0022.jpg';
-import visual2 from '/IMG-20240717-WA0030.jpg';
-import visual3 from '/IMG-20240717-WA0029.jpg';
-import visual4 from '/IMG-20240717-WA0018.jpg';
-import visual5 from '/IMG-20240717-WA0020.jpg';
-import visual6 from '/IMG-20240717-WA0004.jpg';
-import visual7 from '/bluedress (13).jpg';
-import visual8 from '/IMG-20240716-WA0014.jpg';
-import visual9 from '/photo (7).jpeg';
-import visual10 from '/photo (6).jpeg';
-import visual11 from '/IMG-20240717-WA0036.jpg';
-import visual12 from '/bluedress (15).jpg';
-import visual13 from '/bluedress (14).jpg';
-import visual14 from '/bluedress (16).jpg';
-import visual15 from '/frontimage.jpg';
-import visual16 from '/frontimage123.jpg';
+import visual1 from '/IMG-20240717-WA0022.webp';
+import visual2 from '/IMG-20240717-WA0030.webp';
+import visual3 from '/IMG-20240717-WA0029.webp';
+import visual4 from '/IMG-20240717-WA0018.webp';
+import visual5 from '/IMG-20240717-WA0020.webp';
+import visual6 from '/IMG-20240717-WA0004.webp';
+import visual7 from '/bluedress (13).webp';
+import visual8 from '/IMG-20240716-WA0014.webp';
+import visual9 from '/photo (7).webp';
+import visual10 from '/photo (6).webp';
+import visual11 from '/IMG-20240717-WA0036.webp';
+import visual12 from '/bluedress (15).webp';
+import visual13 from '/bluedress (14).webp';
+import visual14 from '/bluedress (16).webp';
+import visual15 from '/frontimage.webp';
+import visual16 from '/frontimage123.webp';
 
 import video1 from '/VID-20240129-WA0011 - Trim.mp4';
 import video2 from '/VID-20240128-WA0002.mp4';
@@ -66,7 +66,7 @@ const Gallery = () => {
       {/* Banner Section */}
       <div className="gallery-banner">
         <video autoPlay loop muted className="background-video">
-          <source src="/WhatsApp Video 2024-08-08 at 2.07.32 AM.mp4" type="video/mp4" />
+          <source src="/WhatsApp Video 2024-08-08 at 2.07.32 AM.mp4" alt="Background Video" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="banner-text">
@@ -86,7 +86,7 @@ const Gallery = () => {
                 key={index}
                 src={src}
                 alt={`Gallery Image ${index + 1}`}
-                className="gallery-image"
+                className="gallery-image" loading="lazy"
               />
             ))}
           </div>
@@ -100,8 +100,8 @@ const Gallery = () => {
         <div className="gallery-wrapper">
           <button className="gallery-arrow left-arrow" onClick={prevVideo}>&lt;</button>
           <div className="gallery-row">
-            <video controls className="gallery-video" ref={videoRef} key={currentVideoIndex}>
-              <source src={videos[currentVideoIndex]} type="video/mp4" />
+            <video controls className="gallery-video" loading="lazy" ref={videoRef} key={currentVideoIndex}>
+              <source src={videos[currentVideoIndex]} type="video/mp4" loading="lazy" />
               Your browser does not support the video tag.
             </video>
           </div>

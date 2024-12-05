@@ -3,230 +3,230 @@ import "./Homepage.css";
 
 const danceStyles = [
   {
-    imgSrc: "bollywood.jpg",
+    imgSrc: "bollywood.webp",alt :"western",
     title: "Western ",
     description: "Curae ex ad libero vestibulum vulputate per dolor.",
     link: "/bollywood",
   },
 
   {
-    imgSrc: "classical.jpg",
+    imgSrc: "classical.webp",alt :"classical",
     title: "Classical ",
     description: "Duis commodo magna dolor. Praesent et aliquet metus.",
     link: "/classical",
   },
   {
-    imgSrc: "contemporary.jpg",
+    imgSrc: "contemporary.webp",alt :"contemporary",
     title: "Contemporary",
     description: "Curae ex ad libero vestibulum vulputate per dolor.",
     link: "/contemporary",
   },
 
   {
-    imgSrc: "zumba.jpg",
+    imgSrc: "zumba.webp",alt :"zumba",
     title: "Zumba",
     description: "Aenean vitae arcu. Maecenas nec risus nunc. Cras.",
     link: "/zumba",
   },
   {
-    imgSrc: "watecolor1.jpg",
+    imgSrc: "watecolor1.webp",alt :"watecolor",
     title: "Drawing",
     description: "Curae ex ad libero vestibulum vulputate per dolor.",
     link: "/drawing",
   },
   {
-    imgSrc: "instrument1.jpg",
+    imgSrc: "instrument1.webp",alt :"instrumental",
     title: "Instrumental",
     description: "Aenean vitae arcu. Maecenas nec risus nunc. Cras.",
     link: "/instrumental",
   },
 ];
 const instructors = [
-  { id: 2, name: "Shyam", imgSrc: "/shyam.jpeg", instaUsername: "john_doe" },
+  { id: 2, name: "Shyam", imgSrc: "/shyam.webp",alt :"Shayam", instaUsername: "john_doe" },
   {
     id: 3,
-    name: "Vaishak",
-    imgSrc: "/vaishak.png",
+    name: "Vaishak",alt :"Vaishak",
+    imgSrc: "/vaishak.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 30,
     name: "Karthik",
-    imgSrc: "/teammember3.png",
+    imgSrc: "/teammember3.webp",alt :"Karthik",
     instaUsername: "jane_smith",
   },
-  { id: 4, name: "Manu", imgSrc: "/manu.png", instaUsername: "john_doe" },
+  { id: 4, name: "Manu", imgSrc: "/manu.webp",alt :"Manu", instaUsername: "john_doe" },
   {
     id: 6,
     name: "Pradeep",
-    imgSrc: "/pradeep2.png",
+    imgSrc: "/pradeep2.webp",alt :"Pradeep",
     instaUsername: "john_doe",
   },
-  { id: 26, name: "Vinu", imgSrc: "/vinod.png", instaUsername: "jane_smith" },
-  { id: 7, name: "Gappi", imgSrc: "/gappy.jpg", instaUsername: "jane_smith" },
+  { id: 26, name: "Vinu", imgSrc: "/vinod.webp",alt :"Vinu", instaUsername: "jane_smith" },
+  { id: 7, name: "Gappi", imgSrc: "/gappi.webp", alt :"Gappi",instaUsername: "jane_smith" },
   {
     id: 18,
-    name: "Ranju Pady",
-    imgSrc: "/Screenshot_20240807-183203.png",
+    name: "Ranju Pady",alt :"Ranju Pady",
+    imgSrc: "/Screenshot_20240807-183203.webp",
     instaUsername: "jane_smith",
   },
-  { id: 5, name: "Anju", imgSrc: "/anju2.jpg", instaUsername: "john_doe" },
+  { id: 5, name: "Anju", alt :"Anju",imgSrc: "/anju2.webp", instaUsername: "john_doe" },
   {
     id: 9,
-    name: "Praveen",
-    imgSrc: "/Screenshot_20240806-181434.png",
+    name: "Praveen",alt :"Praveen",
+    imgSrc: "/Screenshot_20240806-181434.webp",
     instaUsername: "john_doe",
   },
   {
     id: 11,
-    name: "Akshay",
-    imgSrc: "/akshay2.png",
+    name: "Akshay",alt :"Akshay",
+    imgSrc: "/annu.webp",
     instaUsername: "annu_akshay",
   },
   {
     id: 10,
-    name: "Shreya",
-    imgSrc: "/Screenshot_20240807-142205.png",
+    name: "Shreya",alt :"Shreya",
+    imgSrc: "/Screenshot_20240807-142205.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 12,
-    name: "Renjith",
-    imgSrc: "/renjith.png",
+    name: "Renjith",alt :"Renjith",
+    imgSrc: "/renjith.webp",
     instaUsername: "john_doe",
   },
   {
     id: 13,
-    name: "Mithun",
-    imgSrc: "/mithun.png",
+    name: "Mithun",alt :"Mithun",
+    imgSrc: "/mithun.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 15,
-    name: "Sarath",
-    imgSrc: "/Screenshot_20240807-142401.png",
+    name: "Sarath",alt :"Sarath",
+    imgSrc: "/Screenshot_20240807-142401.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 1,
-    name: "Midhuna",
-    imgSrc: "/Screenshot_20240806-181958.png",
+    name: "Midhuna",alt :"Midhuna",
+    imgSrc: "/Screenshot_20240806-181958.webp",
     instaUsername: "john_doe",
   },
   {
     id: 28,
-    name: "Vishnu",
-    imgSrc: "/Screenshot_20240807-143341.png",
+    name: "Vishnu",alt :"Vishnu",
+    imgSrc: "/Screenshot_20240807-143341.webp",
     instaUsername: "jane_smith",
   },
 
   {
     id: 8,
-    name: "Rakhi",
-    imgSrc: "/Screenshot_20240807-142123.png",
+    name: "Rakhi",alt :"Rakhi",
+    imgSrc: "/Screenshot_20240807-142123.webp",
     instaUsername: "jane_smith",
   },
 
   {
     id: 14,
-    name: "Ranjith",
-    imgSrc: "/Screenshot_20240807-142616.png",
+    name: "Ranjith",alt :"Ranjith",
+    imgSrc: "/Screenshot_20240807-142616.webp",
     instaUsername: "john_doe",
   },
 
   {
     id: 16,
-    name: "Richu",
-    imgSrc: "/Screenshot_20240807-142543.png",
+    name: "Richu",alt :"Richu",
+    imgSrc: "/Screenshot_20240807-142543.webp",
     instaUsername: "john_doe",
   },
   {
     id: 17,
-    name: "Nakshatra",
-    imgSrc: "/Screenshot_20240807-142724.png",
+    name: "Nakshatra",alt :"Nakshatra",
+    imgSrc: "/Screenshot_20240807-142724.webp",
     instaUsername: "jane_smith",
   },
 
   {
     id: 19,
-    name: "Vavachi",
-    imgSrc: "/Screenshot_20240807-142833.png",
+    name: "Vavachi",alt :"Vavachi",
+    imgSrc: "/Screenshot_20240807-142833.webp",
     instaUsername: "john_doe",
   },
 
   {
     id: 21,
-    name: "Achu",
-    imgSrc: "/Screenshot_20240807-144016.png",
+    name: "Achu",alt :"Achu",
+    imgSrc: "/Screenshot_20240807-144016.webp",
     instaUsername: "john_doe",
   },
   {
     id: 22,
-    name: "Ameya",
-    imgSrc: "/Screenshot_20240807-142954.png",
+    name: "Ameya",alt :"Ameya",
+    imgSrc: "/Screenshot_20240807-142954.webp",
     instaUsername: "john_doe",
   },
   {
     id: 20,
-    name: "Radhu",
-    imgSrc: "/Screenshot_20240807-143927.png",
+    name: "Radhu",alt :"Radhu",
+    imgSrc: "/Screenshot_20240807-143927.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 23,
-    name: "Swapna",
-    imgSrc: "/Screenshot_20240807-143022.png",
+    name: "Swapna",alt :"Swapna",
+    imgSrc: "/Screenshot_20240807-143022.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 24,
-    name: "sriji",
-    imgSrc: "/Screenshot_20240807-143100.png",
+    name: "sriji",alt :"sriji",
+    imgSrc: "/Screenshot_20240807-143100.webp",
     instaUsername: "john_doe",
   },
   {
     id: 25,
-    name: "Nithu",
-    imgSrc: "/Screenshot_20240807-143135.png",
+    name: "Nithu",alt :"Nithu",
+    imgSrc: "/Screenshot_20240807-143135.webp",
     instaUsername: "jane_smith",
   },
 
   {
     id: 27,
-    name: "Sooraj",
-    imgSrc: "/Screenshot_20240807-143248.png",
+    name: "Sooraj",alt :"Sooraj",
+    imgSrc: "/Screenshot_20240807-143248.webp",
     instaUsername: "jane_smith",
   },
 
   {
     id: 29,
-    name: "Kavya",
-    imgSrc: "/Screenshot_20240807-143409.png",
+    name: "Kavya",alt :"Kavya",
+    imgSrc: "/Screenshot_20240807-143409.webp",
     instaUsername: "john_doe",
   },
 
   {
     id: 31,
-    name: "Abhi",
-    imgSrc: "/IMG-20240809-WA0021.jpg",
+    name: "Abhi",alt :"Abhi",
+    imgSrc: "/IMG-20240809-WA0021.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 32,
-    name: "Deepthi",
-    imgSrc: "/IMG-20240809-WA0022.jpg",
+    name: "Deepthi",alt :"Deepthi",
+    imgSrc: "/IMG-20240809-WA0022.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 33,
-    name: "Anupama",
-    imgSrc: "/Screenshot_20240809-204459.png",
+    name: "Anupama",alt :"Anupama",
+    imgSrc: "/Screenshot_20240809-204459.webp",
     instaUsername: "jane_smith",
   },
   {
     id: 34,
-    name: "Depashree",
-    imgSrc: "/Screenshot_20240809-202033.png",
+    name: "Depashree",alt :"Depashree",
+    imgSrc: "/Screenshot_20240809-202033.webp",
     instaUsername: "jane_smith",
   },
 
@@ -280,61 +280,61 @@ const testimonials = [
 
 const teamMembers = [
   {
-    imgSrc: "shyamdas.png",
+    imgSrc: "shyamdas.webp",
     name: "Shyamdas Vaidyar",
     role: "Founder / Choreographer / Director",
     instagram: "https://www.instagram.com/shyamdasvaidyar/",
   },
   {
-    imgSrc: "manu.png",
+    imgSrc: "manu.webp",
     name: "Manu",
     role: "Choreographer / Instructor",
     instagram: "https://www.instagram.com/man_u_un_locked_man/",
   },
   {
-    imgSrc: "pradeep2.png",
+    imgSrc: "pradeep2.webp",
     name: "Pradeep Koppal",
     role: "Manager / Dancer",
     instagram: "https://www.instagram.com/_pradeep_koppal/",
   },
   {
-    imgSrc: "karthietta.png",
+    imgSrc: "karthietta.webp",
     name: "Karthik KR",
     role: "Choreographer / Instructor",
     instagram: "https://www.instagram.com/karthikmayavi/",
   },
   {
-    imgSrc: "akshay2.png",
+    imgSrc: "akshay2.webp",
     name: "Akshay Kumar",
     role: "Dancer / Instructor",
     instagram: "https://www.instagram.com/annu_akshay/",
   },
   {
-    imgSrc: "athira.png",
+    imgSrc: "athira.webp",
     name: "Athira lakshmanan",
     role: "Classical Dancer / Instructor",
     instagram: "https://www.instagram.com/athiralakshmananhoney/",
   },
   {
-    imgSrc: "renjith.png",
+    imgSrc: "renjith.webp",
     name: "Rengith",
     role: "Dancer / Instructor",
     instagram: "https://www.instagram.com/mr_capture_head/",
   },
   {
-    imgSrc: "vinod.png",
+    imgSrc: "vinod.webp",
     name: "Vinod Thekzz",
     role: "Choreographer / Instructor",
     instagram: "https://www.instagram.com/vinuthekzz/",
   },
   // {
-  //   imgSrc: "mithun.png",
+  //   imgSrc: "mithun.webp",
   //   name: "Mithun",
   //   role: "Dancer",
   //    instagram: "https://www.instagram.com/me_thu_n46/"
   // },
   {
-    imgSrc: "Screenshot_20240806-181958.png",
+    imgSrc: "Screenshot_20240806-181958.webp",
     name: "Midhuna",
     role: "Dancer / Instructor",
     instagram: "https://www.instagram.com/_k_a_t_h_u_zzz_/",
@@ -432,8 +432,8 @@ const Homepage = () => {
     <div className="homepage">
       {/* Hero section */}
       <header className="hero">
-        <video autoPlay loop muted className="background-video">
-          <source src="/sample video.mp4" type="video/mp4" />
+        <video autoPlay loop muted className="background-video" loading="lazy">
+          <source src="/sample video.mp4" alt="Background Video" loading="lazy" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="black-overlay"></div>
@@ -468,7 +468,7 @@ const Homepage = () => {
               {danceStyles.concat(danceStyles).map((style, index) => (
                 <div className="dance-style" key={index}>
                   <div className="dance-style-card">
-                    <img src={style.imgSrc} alt={style.title} />
+                    <img src={style.imgSrc} loading="lazy" alt={style.title} />
                     <h3>{style.title}</h3>
                     <button
                       onClick={() => handleEnrollingClick()}
@@ -556,7 +556,7 @@ const Homepage = () => {
               .map((instructor, index) => (
                 <div className="instructor" key={index}>
                   <img
-                    src={instructor.imgSrc}
+                    src={instructor.imgSrc} loading="lazy"
                     alt={`Instructor ${instructor.name}`}
                     className="instructor-image"
                   />
@@ -578,7 +578,7 @@ const Homepage = () => {
           </button>
         </div>
         <div className="floating-whatsapp-button" onClick={handleEnrollingClick}>
-      <img src="whatsapp.png" alt="WhatsApp" />
+      <img src="whatsapp.webp" loading="lazy"alt="WhatsApp" />
       <span>Chat With Us</span>
     </div>
       </section>

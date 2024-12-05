@@ -2,101 +2,101 @@ import React, { useEffect, useState } from "react";
 import "./AboutUs.css";
 
 const instructors = [
-  { id: 1, name: "Midhuna", imgSrc: "/Screenshot_20240806-181958.png", instaUsername: "john_doe" },
-  { id: 2, name: "Shyam", imgSrc: "/shyam.jpeg", instaUsername: "john_doe" },
-  { id: 3, name: "Vaishak", imgSrc: "/vaishak.png", instaUsername: "jane_smith" },
-  { id: 4, name: "Manu", imgSrc: "/manu.png", instaUsername: "john_doe" },
-  { id: 5,  name: "Anju", imgSrc: "/anju2.jpg", instaUsername: "john_doe"},
-  { id: 6, name: "Pradeep", imgSrc: "/pradeep2.png", instaUsername: "john_doe" },
-  { id: 7, name: "Gappi", imgSrc: "/gappy.jpg", instaUsername: "jane_smith" },
-  { id: 8, name: "Rakhi", imgSrc: "/Screenshot_20240807-142123.png", instaUsername: "jane_smith" },
-  { id: 9, name: "Praveen", imgSrc: "/Screenshot_20240806-181434.png", instaUsername: "john_doe" },
-  { id: 10, name: "Shreya", imgSrc: "/Screenshot_20240807-142205.png", instaUsername: "jane_smith" },
-  { id: 11, name: "Akshay", imgSrc: "/akshay2.png", instaUsername: "annu_akshay" },
-  { id: 12, name: "Renjith", imgSrc: "/renjith.png", instaUsername: "john_doe" },
-  { id: 13, name: "Mithun", imgSrc: "/mithun.png", instaUsername: "jane_smith" },
-  { id: 14, name: "Ranjith", imgSrc: "/Screenshot_20240807-142616.png", instaUsername: "john_doe" },
-  { id: 15, name: "Sarath", imgSrc: "/Screenshot_20240807-142401.png", instaUsername: "jane_smith" },
-  { id: 16, name: "Richu", imgSrc: "/Screenshot_20240807-142543.png", instaUsername: "john_doe" },
-  { id: 17, name: "Nakshatra", imgSrc: "/Screenshot_20240807-142724.png", instaUsername: "jane_smith" },
-  { id: 18, name: "Ranju Pady", imgSrc: "/Screenshot_20240807-183203.png", instaUsername: "jane_smith" },
-  { id: 19, name: "Vavachi", imgSrc: "/Screenshot_20240807-142833.png", instaUsername: "john_doe" },
-  { id: 20, name: "Radhu", imgSrc: "/Screenshot_20240807-143927.png", instaUsername: "jane_smith" },
-  { id: 21, name: "Achu", imgSrc: "/Screenshot_20240807-144016.png", instaUsername: "john_doe" },
-  { id: 22, name: "Ameya", imgSrc: "/Screenshot_20240807-142954.png", instaUsername: "john_doe" },
-  { id: 23, name: "Swapna", imgSrc: "/Screenshot_20240807-143022.png", instaUsername: "jane_smith" },
-  { id: 24, name: "sriji", imgSrc: "/Screenshot_20240807-143100.png", instaUsername: "john_doe" },
-  { id: 25, name: "Nithu", imgSrc: "/Screenshot_20240807-143135.png", instaUsername: "jane_smith" },
-  { id: 26, name: "Vinu", imgSrc: "/vinod.png", instaUsername: "jane_smith" },
-  { id: 27, name: "Sooraj", imgSrc: "/Screenshot_20240807-143248.png", instaUsername: "jane_smith" },
-  { id: 28, name: "Vishnu", imgSrc: "/Screenshot_20240807-143341.png", instaUsername: "jane_smith" },
-  { id: 29, name: "Kavya", imgSrc: "/Screenshot_20240807-143409.png", instaUsername: "john_doe" },
-  { id: 30, name: "Karthik", imgSrc: "/teammember3.png", instaUsername: "jane_smith" },
-  {id: 31, name: "Abhi", imgSrc: "/IMG-20240809-WA0021.jpg", instaUsername: "jane_smith" },
-  {id: 32, name: "Deepthi", imgSrc: "/IMG-20240809-WA0022.jpg", instaUsername: "jane_smith" },
-  { id: 33, name: "Anupama", imgSrc: "/Screenshot_20240809-204459.png", instaUsername: "jane_smith" },
-  { id: 34, name: "Depashree", imgSrc: "/Screenshot_20240809-202033.png", instaUsername: "jane_smith" },
+  { id: 1, name: "Midhuna", imgSrc: "/Screenshot_20240806-181958.webp",  alt :"Team Member",instaUsername: "john_doe" },
+  { id: 2, name: "Shyam", imgSrc: "/shyam.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 3, name: "Vaishak", imgSrc: "/vaishak.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 4, name: "Manu", imgSrc: "/manu.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 5,  name: "Anju", imgSrc: "/anju2.webp",alt  :"Team Member", instaUsername: "john_doe"},
+  { id: 6, name: "Pradeep", imgSrc: "/pradeep2.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 7, name: "Gappi", imgSrc: "/gappy.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 8, name: "Rakhi", imgSrc: "/Screenshot_20240807-142123.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  { id: 9, name: "Praveen", imgSrc: "/Screenshot_20240806-181434.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 10, name: "Shreya", imgSrc: "/Screenshot_20240807-142205.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 11, name: "Akshay", imgSrc: "/akshay2.webp", alt :"Team Member",instaUsername: "annu_akshay" },
+  { id: 12, name: "Renjith", imgSrc: "/renjith.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 13, name: "Mithun", imgSrc: "/mithun.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  { id: 14, name: "Ranjith", imgSrc: "/Screenshot_20240807-142616.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 15, name: "Sarath", imgSrc: "/Screenshot_20240807-142401.webp", alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 16, name: "Richu", imgSrc: "/Screenshot_20240807-142543.webp", instaUsername: "john_doe" },
+  { id: 17, name: "Nakshatra", imgSrc: "/Screenshot_20240807-142724.webp", alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 18, name: "Ranju Pady", imgSrc: "/Screenshot_20240807-183203.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 19, name: "Vavachi", imgSrc: "/Screenshot_20240807-142833.webp",  alt :"Team Member",instaUsername: "john_doe" },
+  { id: 20, name: "Radhu", imgSrc: "/Screenshot_20240807-143927.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 21, name: "Achu", imgSrc: "/Screenshot_20240807-144016.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 22, name: "Ameya", imgSrc: "/Screenshot_20240807-142954.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 23, name: "Swapna", imgSrc: "/Screenshot_20240807-143022.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 24, name: "sriji", imgSrc: "/Screenshot_20240807-143100.webp",alt :"Team Member", instaUsername: "john_doe" },
+  { id: 25, name: "Nithu", imgSrc: "/Screenshot_20240807-143135.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 26, name: "Vinu", imgSrc: "/vinod.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  { id: 27, name: "Sooraj", imgSrc: "/Screenshot_20240807-143248.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  { id: 28, name: "Vishnu", imgSrc: "/Screenshot_20240807-143341.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  { id: 29, name: "Kavya", imgSrc: "/Screenshot_20240807-143409.webp", alt :"Team Member",instaUsername: "john_doe" },
+  { id: 30, name: "Karthik", imgSrc: "/teammember3.webp",alt :"Team Member", instaUsername: "jane_smith" },
+  {id: 31, name: "Abhi", imgSrc: "/IMG-20240809-WA0021.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  {id: 32, name: "Deepthi", imgSrc: "/IMG-20240809-WA0022.webp", instaUsername: "jane_smith" },
+  { id: 33, name: "Anupama", imgSrc: "/Screenshot_20240809-204459.webp", alt :"Team Member",instaUsername: "jane_smith" },
+  { id: 34, name: "Depashree", imgSrc: "/Screenshot_20240809-202033.webp",alt :"Team Member", instaUsername: "jane_smith" },
   
   // Add more sample data as needed
 ];
 
 const teamMembers = [
   {
-    imgSrc: "shyamdas.png",
+    imgSrc: "shyam.webp",
     name: "Shyamdas Vaidyar",
     role: "Founder / Choreographer / Director",
     instagram: "https://www.instagram.com/shyamdasvaidyar/"
   },
   {
-    imgSrc: "manu.png",
+    imgSrc: "manu.webp" ,alt :"manu",
     name: "Manu",
     role: "Choreographer / Instructor",
     instagram:'https://www.instagram.com/man_u_un_locked_man/'
   },
   {
-    imgSrc: "pradeep2.png",
+    imgSrc: "pradeep2.webp", alt :"pradeep",
     name: "Pradeep Koppal",
     role: "Manager / Dancer",
      instagram: "https://www.instagram.com/_pradeep_koppal/"
   },
   {
-    imgSrc: "karthietta.png",
+    imgSrc: "teammember3.webp", alt :"karthik",
     name: "Karthik KR",
     role: "Choreographer / Instructor"
     , instagram: "https://www.instagram.com/karthikmayavi/"
   },
   {
-    imgSrc: "akshay2.png",
+    imgSrc: "annu.webp",alt :"akshay",
     name: "Akshay Kumar",
     role: "Dancer / Instructor",
      instagram: "https://www.instagram.com/annu_akshay/"
   },
   {
-  imgSrc: "athira.png",
+  imgSrc: "athira.webp",alt :"athira",
     name: "Athira lakshmanan",
     role: "Classical Dancer / Instructor",
      instagram: "https://www.instagram.com/athiralakshmananhoney/"
   },
   {
-    imgSrc: "renjith.png",
+    imgSrc: "renjith.webp",alt :"renjith",
     name: "Rengith",
     role: "Dancer / Instructor",
      instagram: "https://www.instagram.com/mr_capture_head/"
   },
   {
-    imgSrc: "vinod.png",
+    imgSrc: "vinod.webp",alt :"vinod",
     name: "Vinod Thekzz",
     role: "Choreographer / Instructor",
      instagram: "https://www.instagram.com/vinuthekzz/"
   },
   // {
-  //   imgSrc: "mithun.png",
+  //   imgSrc: "mithun.webp",
   //   name: "Mithun",
   //   role: "Dancer",
   //    instagram: "https://www.instagram.com/me_thu_n46/"
   // },
   {
-    imgSrc: "Screenshot_20240806-181958.png",
+    imgSrc: "Screenshot_20240806-181958.webp",alt :"midhuna",
     name: "Midhuna",
     role: "Dancer / Instructor",
     instagram:'https://www.instagram.com/_k_a_t_h_u_zzz_/'
@@ -134,8 +134,8 @@ const AboutUs = () => {
   return (
     <div className="about-us">
       <div className="about-banner">
-        <video autoPlay loop muted className="background-video">
-          <source src="/roadshows.mp4" type="video/mp4" />
+        <video autoPlay loop muted className="background-video"loading="lazy">
+          <source src="/roadshows.mp4" type="video/mp4" loading="lazy"alt="Background Video" />
           Your browser does not support the video tag.
         </video>
         <div className="banner-text">
@@ -169,7 +169,7 @@ const AboutUs = () => {
               </p>
             </div>
             <div className="vision-image">
-              <img src="/mergegroupphoto.jpeg" alt="Vision" />
+              <img src="/mergegroupphoto.webp" loading="lazy"alt="Vision" />
             </div>
           </div>
         </div>
@@ -184,7 +184,7 @@ const AboutUs = () => {
             of knowledge and a love of dance to every class.
           </p>
         </div>
-        <img src="bluedress.jpg" alt="Our Instructors" className="section-image" />
+        <img src="bluedress.webp" loading="lazy"alt="Our Instructors" className="section-image" />
       </section>
 
       <section className="section">
@@ -197,7 +197,7 @@ const AboutUs = () => {
             discipline, and teamwork.
           </p>
         </div>
-        <img src="background3.jpg" alt="Our Mission" className="section-image" />
+        <img src="background3.webp" loading="lazy"alt="Our Mission" className="section-image" />
       </section>
 
       <section className="section reverse">
@@ -210,7 +210,7 @@ const AboutUs = () => {
             generations.
           </p>
         </div>
-        <img src="IMG-20240717-WA0009.jpg" alt="Our History" className="section-image" />
+        <img src="IMG-20240717-WA0009.webp" loading="lazy"alt="Our History" className="section-image" />
       </section>
       {/* Team section */}
       <section className="team-section">
@@ -231,7 +231,7 @@ const AboutUs = () => {
               {teamMembers.map((member, index) => (
                 <div className="team-member" key={index}>
                   <div className="team-member-card">
-                    <img src={member.imgSrc} alt={member.name} />
+                    <img src={member.imgSrc} loading="lazy"alt={member.name} />
                     <h3>
                       {member.name}
                       <a href={member.instagram} target="_blank" rel="noopener noreferrer">

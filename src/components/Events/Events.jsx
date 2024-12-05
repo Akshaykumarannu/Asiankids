@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
 import './Events.css';
-import visual1 from '/IMG-20240717-WA0022.jpg';
-import visual2 from '/IMG-20240717-WA0030.jpg';
-import visual3 from '/IMG-20240717-WA0029.jpg';
+import visual1 from '/IMG-20240717-WA0022.webp';
+import visual2 from '/IMG-20240717-WA0030.webp';
+import visual3 from '/IMG-20240717-WA0029.webp';
 import EventBookingForm from './EventBookingForm.jsx';
 
 const Events = () => {
@@ -22,7 +22,7 @@ const Events = () => {
       
       <div className="hero-section">
         <video autoPlay loop muted className="background-video">
-          <source src="/weddingTrim.mp4" type="video/mp4" />
+          <source src="/weddingTrim.mp4" alt="Background Video" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="overlay">
@@ -48,9 +48,9 @@ const Events = () => {
       </div>
 
       <div className="visual-section">
-        <img src={visual1} alt="Event Visual 1" className="responsive-image" />
-        <img src={visual2} alt="Event Visual 2" className="responsive-image" />
-        <img src={visual3} alt="Event Visual 3" className="responsive-image" />
+        <img src={visual1} alt="Event Visual 1" loading="lazy" className="responsive-image" />
+        <img src={visual2} alt="Event Visual 2" loading="lazy"className="responsive-image" />
+        <img src={visual3} alt="Event Visual 3" loading="lazy"className="responsive-image" />
       </div>
     </div>
   );

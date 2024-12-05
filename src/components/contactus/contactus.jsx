@@ -74,7 +74,7 @@ const ContactUs = () => {
     <div className="contact-us">
       <div className="contactus-banner">
         <img
-          src="contactbackground.jpg"
+          src="contactbackground.webp" 
           alt="Asian Kids Dance Crew Banner"
           className="banner-image-class"
         />
@@ -86,16 +86,16 @@ const ContactUs = () => {
         <div className="contact-form-container">
           <h2>Direct Link</h2>
           <img
-            src="whatsapp.png"
+            src="whatsapp.webp" loading="lazy"
             alt="Contact Us"
             className="contact-us-image"
             onClick={handleEnrollClick}
           />
           <a href={`tel:${phoneNumber}`}>
-            <img src="call.png" alt="Call Us" className="contact-us-image" />
+            <img src="call.webp" alt="Call Us"  loading="lazy"className="contact-us-image" />
           </a>
           <img
-            src="insta.png"
+            src="insta.webp" loading="lazy"
             alt="Contact Us"
             className="contact-us-image"
             onClick={handleInstaClick}
