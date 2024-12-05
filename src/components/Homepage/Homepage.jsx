@@ -35,7 +35,7 @@ const danceStyles = [
     link: "/drawing",
   },
   {
-    imgSrc: "instrument1.webp",alt :"instrumental",
+    imgSrc: "instrument2.webp",alt :"instrumental",
     title: "Instrumental",
     description: "Aenean vitae arcu. Maecenas nec risus nunc. Cras.",
     link: "/instrumental",
