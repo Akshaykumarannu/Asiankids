@@ -433,7 +433,7 @@ const Homepage = () => {
       {/* Hero section */}
       <header className="hero">
         <video autoPlay loop muted className="background-video" loading="lazy">
-          <source src="/sample video.mp4" alt="Background Video" loading="lazy" type="video/mp4" />
+          <source src="https://res.cloudinary.com/diqcdbpg4/video/upload/v1733512004/sample_video_gwmu34.mp4" alt="Background Video" loading="lazy" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="black-overlay"></div>

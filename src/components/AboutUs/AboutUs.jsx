@@ -135,7 +135,7 @@ const AboutUs = () => {
     <div className="about-us">
       <div className="about-banner">
         <video autoPlay loop muted className="background-video"loading="lazy">
-          <source src="/roadshows.mp4" type="video/mp4" loading="lazy"alt="Background Video" />
+          <source src="https://res.cloudinary.com/diqcdbpg4/video/upload/v1733513005/roadshows_ofwrsa.mp4" type="video/mp4" loading="lazy"alt="Background Video" />
           Your browser does not support the video tag.
         </video>
         <div className="banner-text">

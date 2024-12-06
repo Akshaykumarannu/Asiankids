@@ -22,7 +22,7 @@ const Events = () => {
       
       <div className="hero-section">
         <video autoPlay loop muted className="background-video">
-          <source src="/weddingTrim.mp4" alt="Background Video" type="video/mp4" />
+          <source src="https://res.cloudinary.com/diqcdbpg4/video/upload/v1733512084/weddingTrim_rpjwmy.mp4" alt="Background Video" type="video/mp4" />
           Your browser does not support the video tag.
         </video>
         <div className="overlay">

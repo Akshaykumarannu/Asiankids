@@ -6,7 +6,12 @@ const Classes = () => {
     <div className="classes-page">
       <div className="clas-banner">
         <video autoPlay loop muted className="background-video" loading="lazy">
-          <source src="/newclassuduma.mp4" loading="lazy"alt="Background Video" type="video/mp4"  />
+          <source
+            src="https://res.cloudinary.com/diqcdbpg4/video/upload/v1733511852/newclassuduma_nwzsdb.mp4"
+            loading="lazy"
+            alt="Background Video"
+            type="video/mp4"
+          />
           Your browser does not support the video tag.
         </video>
         <div className="banner-text-class">
@@ -20,8 +25,17 @@ const Classes = () => {
       <section className="studio-section">
         <div className="container-class">
           <div className="studio">
-            <video autoPlay loop muted className="danceclassvideo" loading="lazy">
-              <source src="/VID-20240811-WA0007.mp4"loading="lazy" alt="Background Video" type="video/mp4" />
+            <video
+              autoPlay
+              loop
+              muted
+              className="danceclassvideo"
+              loading="lazy"
+            >
+              <source
+      src="https://res.cloudinary.com/diqcdbpg4/video/upload/v1733512104/VID-20240811-WA0007_eu4ggp.mp4"
+      type="video/mp4"
+    />
               Your browser does not support the video tag.
             </video>
             <div className="studio-info">
@@ -45,10 +59,18 @@ const Classes = () => {
           </div>
 
           <div className="studio">
-            <video autoPlay loop muted className="danceclassvideo" loading="lazy">
+            <video
+              autoPlay
+              loop
+              muted
+              className="danceclassvideo"
+              loading="lazy"
+            >
               <source
-                src="/WhatsApp Video 2024-08-08 at 9.23.34 PM.mp4" alt="Background Video"
-                type="video/mp4" loading="lazy"
+                src="/WhatsApp Video 2024-08-08 at 9.23.34 PM.mp4"
+                alt="Background Video"
+                type="video/mp4"
+                loading="lazy"
               />
               Your browser does not support the video tag.
             </video>
@@ -75,7 +97,8 @@ const Classes = () => {
           <div className="studio">
             <img
               src="https://i0.wp.com/blog.headbox.com/wp-content/uploads/2017/03/Flow-Dance-London-1.jpg?fit=1400%2C933&ssl=1"
-              alt="Dubai Dance Studio" loading="lazy"
+              alt="Dubai Dance Studio"
+              loading="lazy"
             />
             <div className="studio-info">
               <h2>
